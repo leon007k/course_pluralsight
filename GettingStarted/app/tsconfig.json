@@ -1,9 +1,13 @@
 {
   "extends": "../tsconfig.base",
   "compilerOptions": {
-    "removeComments": true
+    "removeComments": true,
+    "outFile": "../js/app.js"           // * Permite que solo se diriga toda la salida en un solo archivo
   },
-  "include":[
-    "./**/*"
-  ]
+  //"include":[                         // * indica al compilador que ejecute todos los archivos de typescript
+  //  "./**/*"
+  //]
+  "files": [
+    "./app.ts"
+  ] 
 }
